@@ -1,0 +1,18 @@
+Date:29/09/22
+LOG 4G Vulnerablity issue
+log4g 1.x ---->change to log4j 1.2
+
+
+ $ ssh-copy-id ansible@172.31.35.52
+  $ sudo ssh-copy-id ubuntu@15.206.127.121
+  $ sudo ssh-copy-id ubuntu@35.154.118.227
+ssh-copy-id username@remote_host
+
+---
+- hosts: all
+  gather_facts: no
+  remote_user: anisble
+  tasks:
+   - name : Test connection
+     ping:
+     remote_user: ansible
